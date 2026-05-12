@@ -20,7 +20,10 @@ jobs:
 
       - name: 1. Pegar o codigo-fonte 
 
-        uses: actions/checkout@v4 
+        uses: actions/checkout@v4
+         - name: 1.5. Fabricar o produto 
+
+        run: echo "Este e o nosso produto final!" > produto.txt 
 
  
 
@@ -32,4 +35,16 @@ jobs:
 
       - name: 3. Estacao de Teste (Controle de Qualidade) 
 
-        run: echo "Rodando os testes... Verificando se tudo funciona!"
+        run: echo "Rodando os testes... Verificando se tudo funciona!" 
+
+ 
+
+      - name: 4. Empacotar o produto final (Artefato) 
+
+        uses: actions/upload-artifact@v4 
+
+        with: 
+
+          name: pacote-do-produto 
+
+          path: produto.txt
