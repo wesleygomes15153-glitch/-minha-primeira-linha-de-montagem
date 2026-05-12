@@ -1,0 +1,1 @@
+[![Minha Primeira Linha de Montagem](https://github.com/wesleygomes15153-glitch/-minha-primeira-linha-de-montagem/actions/workflows/linha-de-montagem.yml/badge.svg)](https://github.com/wesleygomes15153-glitch/-minha-primeira-linha-de-montagem/actions/workflows/linha-de-montagem.yml)
